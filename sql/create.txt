@@ -1,0 +1,16 @@
+CREATE DATABASE got 
+DEFAULT CHARACTER SET utf8 
+DEFAULT COLLATE utf8_unicode_ci;
+
+CREATE TABLE characters (
+    id bigint not null,
+    name varchar(255) not null,
+    alias varchar(255),
+    dead bit,
+    portrait varchar(255) not null,
+    picture varchar(255) not null,
+    bio text,
+    house varchar(50),
+    organization varchar (50),
+    CONSTRAINT PK_id PRIMARY KEY (id)
+) ENGINE=InnoDB;
